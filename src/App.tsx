@@ -1,15 +1,12 @@
 import { certifications, contact, education, projects, roles, skillGroups, stats } from "./data";
 
-const RESUME_PDF = "/Juganu-Tiwadi-Resume.pdf";
+const RESUME_PDF = `${import.meta.env.BASE_URL}Juganu-Tiwadi-Resume.pdf`;
 
 function App() {
   return (
     <>
       <header className="site-header">
         <div className="wrap">
-          <a href="#top" className="logo">
-            jt<span>@</span>dev:~$
-          </a>
           <nav className="nav">
             <a href="#stack">stack</a>
             <a href="#work">work</a>
