@@ -206,5 +206,4 @@ export const contact = {
 export const stats = [
   { value: "5", accent: "+", label: "Years" },
   { value: "8", accent: "", label: "Platforms shipped" },
-  { value: "26s", accent: "→0", label: "Dashboard load" },
 ];
