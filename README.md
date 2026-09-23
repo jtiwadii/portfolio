@@ -1,6 +1,6 @@
 # Juganu Tiwadi — Portfolio
 
-One-page portfolio site, built with React + TypeScript + Vite. Implemented from the Claude Design handoff in `design/` (see `design/DESIGN_HANDOFF.md` and `design/chats/chat1.md` for the original design brief).
+One-page portfolio site, built with React + TypeScript + Vite. Dark, animated redesign implemented from a Claude Design handoff.
 
 ## Develop
 
@@ -19,7 +19,7 @@ npm run preview
 ## Structure
 
 - `src/data.ts` — all resume content (skills, roles, projects, contact info)
-- `src/App.tsx` — page layout
-- `src/index.css` — styling, matching the original design's colors/type
+- `src/App.tsx` — page layout, scroll reveal / parallax / cursor glow, tilting project cards
+- `src/index.css` — styling and animations (accent colour tokens at the top; respects `prefers-reduced-motion`)
 - `public/Juganu-Tiwadi-Resume.pdf` — downloadable resume
 - `design/` — original Claude Design export (reference only, not part of the built site)

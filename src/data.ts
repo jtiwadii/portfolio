@@ -7,6 +7,7 @@ export interface Role {
   company: string;
   title: string;
   period: string;
+  note: string;
 }
 
 export interface Project {
@@ -50,20 +51,53 @@ export const skillGroups: SkillGroup[] = [
   { label: "OTHER", items: ["i18n & RTL (Arabic)", "PDF generation", "Accessibility"] },
 ];
 
+// Short list that loops in the stack marquee.
+export const marqueeStack = [
+  "TypeScript",
+  "React",
+  "Node.js",
+  "PostgreSQL",
+  "Prisma",
+  "React Router",
+  "Tailwind CSS",
+  "Electron",
+  "AWS",
+  "MongoDB",
+  "Vitest",
+  "Cypress",
+];
+
 export const roles: Role[] = [
-  { company: "IONAI Technology Solutions", title: "Senior Software Developer", period: "Jun 2025 — Present" },
-  { company: "Geeky Nerds Infotech Pvt Ltd", title: "Senior Software Developer", period: "Sep 2022 — Jun 2025" },
-  { company: "Tata Consultancy Services", title: "Assistant System Engineer", period: "Oct 2020 — Sep 2022" },
+  {
+    company: "IONAI Technology Solutions",
+    title: "Senior Software Developer",
+    period: "Jun 2025 — Present",
+    note: "Shipped Maktaabi, RetailOS, ProMag and HiserWorld — multi-tenant SaaS, an offline-first desktop ERP and an AI-assisted catalog, from data model to cloud deploy.",
+  },
+  {
+    company: "Geeky Nerds Infotech Pvt Ltd",
+    title: "Senior Software Developer",
+    period: "Sep 2022 — Jun 2025",
+    note: "Built a hospital admin panel and patient portal on AWS Lambda and S3, and secured, documented REST APIs for a cross-system risk-assessment platform.",
+  },
+  {
+    company: "Tata Consultancy Services",
+    title: "Assistant System Engineer",
+    period: "Oct 2020 — Sep 2022",
+    note: "Built features and backend functionality for an internal customer-engagement platform on Node.js, PostgreSQL and Heroku.",
+  },
 ];
 
 export const education = [
   {
     degree: "Master of Computer Application",
-    school: "Vellore Institute of Technology, Bhopal · 2019",
+    school: "Vellore Institute of Technology, Bhopal",
+    year: "2019",
   },
   {
     degree: "Bachelor of Computer Application",
-    school: "Raj Rishi Government College, Alwar · 2017",
+    school: "Raj Rishi Government College, Alwar",
+    year: "2017",
   },
 ];
 
@@ -165,11 +199,12 @@ export const contact = {
   linkedin: "linkedin.com/in/jay52",
   linkedinHandle: "/in/jay52",
   location: "Jaipur, Rajasthan, IN",
+  github: "github.com/jtiwadii",
 };
 
+// Hero stats: `accent` renders in the accent colour after `value`.
 export const stats = [
-  { label: "EXPERIENCE", value: "5+ yrs" },
-  { label: "PLATFORMS SHIPPED", value: "8" },
-  { label: "DASHBOARD LOAD", value: "26s → ~0s" },
-  { label: "CORE STACK", value: "TS · React · Node" },
+  { value: "5", accent: "+", label: "Years" },
+  { value: "8", accent: "", label: "Platforms shipped" },
+  { value: "26s", accent: "→0", label: "Dashboard load" },
 ];
